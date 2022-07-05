@@ -1,5 +1,4 @@
 rock_botton = "Mark kate olson linssay Lohan charlie heen"
-
 puts rock_botton
 puts rock_botton.split
 
