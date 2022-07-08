@@ -16,3 +16,8 @@ mixed_soda_type = ["coke", "Mountain Dew", 7, "Orange", 7+9]
 puts mixed_soda_type
 puts mixed_soda_type[4]
 puts mixed_soda_type[-2]
+
+state_one = "Your favorite drink is"
+#puts state_one + mixed_soda_type[2]
+
+puts "#{mixed_soda_type[0]} + tastes delicious!"
