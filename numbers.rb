@@ -30,6 +30,7 @@ def mod(first_num, second_num)
     first_num.to_f % second_num.to_f
 end
 
+# conditions ==, !=, <, >, &&, ||, 10.eql?(10.0) => Used to check or test type
 
 if user_entry =="1"
     puts "you have chosen to add"
