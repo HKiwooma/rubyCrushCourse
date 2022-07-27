@@ -1,3 +1,5 @@
+
+# Addition, Substraction, Multiplication,  Division, and  Modulus
 puts "Simple Calculator"
 25.times{ print "=" }
 
@@ -7,24 +9,26 @@ number_1 = gets.chomp
 puts "\n Enter the second number"
 number_2 = gets.chomp
 
-# Addition
+#methods
+def add(first_num, second_num)
+    first_num.to_f + second_num.to_f
+end
+def sub(first_num, second_num)
+    second_num.to_f - first_num.to_f
+end
+def multiply(first_num, second_num)
+    first_num.to_f * second_num.to_f
+end
+def divide(first_num, second_num)
+    first_num.to_f / second_num.to_f
+end
+def mod(first_num, second_num)
+    first_num.to_f % second_num.to_f
+end
 
-# puts "\n The first number added with second number is #{number_1.to_i + number_2.to_i}"
-puts "\n #{number_1} + #{number_2} = #{number_1.to_i + number_2.to_i}"
-
-# Substraction
-
-puts "\n #{number_1} - #{number_2} = #{number_1.to_i - number_2.to_i}"
-
-# Multiplication
-
-puts "\n #{number_1} * #{number_2} = #{number_1.to_i * number_2.to_i}"
-
-# Division
-
-puts "\n #{number_1} / #{number_2} = #{number_1.to_f / number_2.to_f}"
-
-#modulus
-
-# puts "\n #{number_1} modulus #{number_2} = #{number_1.to_i % number_2.to_i}"
-puts "\n #{number_1} % #{number_2} = #{number_1.to_i % number_2.to_i}"
+#function call outputs
+puts "\n The first number added to second number is #{add(number_1, number_2)}"
+puts "\n The first number subtracted from with second number is #{sub(number_1, number_2)}"
+puts "\n The first number multiplied by second number is #{multiply(number_1, number_2)}"
+puts "\n The first number divided by second number is #{divide(number_1, number_2)}"
+puts "\n The first number mod second number is #{mod(number_1, number_2)}"
